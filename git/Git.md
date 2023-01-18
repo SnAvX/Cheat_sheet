@@ -1,5 +1,4 @@
 # Git Architecture
-*****
 
 ## Repository
 
@@ -43,5 +42,11 @@ HEAD is a pointer that points to the current branch. A repository only has 1 act
 
 # Commande
 
-*******
+## init
+
+Create an empty Git repository. The Git repository's settings, stored information, and more is stored in a directory (a folder) named ".git".
+
+```
+$ git init
+```
 
