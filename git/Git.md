@@ -1,4 +1,5 @@
 # Git Architecture
+*****
 
 ## Repository
 
@@ -41,3 +42,6 @@ HEAD is a pointer that points to the current branch. A repository only has 1 act
  * Committed - Files have been committed to the Git Database
 
 # Commande
+
+*******
+
