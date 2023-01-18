@@ -49,4 +49,100 @@ Create an empty Git repository. The Git repository's settings, stored informatio
 ```
 $ git init
 ```
+## config
+
+To configure settings. Whether it be for the repository, the system itself, or global configurations ( global config file is ~/.gitconfig ).
+
+```
+# Print & Set Some Basic Config Variables (Global)
+$ git config --global user.email "MyEmail@Zoho.com"
+$ git config --global user.name "My Name"
+```
+Detail comfig [here](https://git-scm.com/docs/git-config)
+
+## help
+
+To give you quick access to an extremely detailed guide of each command. Or to just give you a quick reminder of some semantics.
+
+```
+# Quickly check available commands
+$ git help
+
+# Check all available commands
+$ git help -a
+
+# Command specific help - user manual
+# git help <command_here>
+$ git help add
+$ git help commit
+$ git help init
+# or git <command_here> --help
+$ git add --help
+$ git commit --help
+$ git init --help
+```
+
+## ignore files
+
+To intentionally untrack file(s) & folder(s) from git. Typically meant for private & temp files which would otherwise be shared in the repository.
+
+```
+$ echo "temp/" >> .gitignore
+$ echo "private_key" >> .gitignore
+```
+
+## Status
+
+To show differences between the index file (basically your working copy/repo) and the current HEAD commit.
+
+```
+# Will display the branch, untracked files, changes and other differences
+$ git status
+
+# To learn other "tid bits" about git status
+$ git help status
+```
+
+## ad
+
+To add files to the staging area/index. If you do not git add new files to the staging area/index, they will not be included in commits!
+
+```
+# add a file in your current working directory
+$ git add HelloWorld.java
+
+# add a file in a nested dir
+$ git add /path/to/file/HelloWorld.c
+
+# Regular Expression support!
+$ git add ./*.java
+
+# You can also add everything in your working directory to the staging area.
+$ git add -A
+```
+
+This only adds a file to the staging area/index, it doesn't commit it to the working directory/repo.
+
+## branch
+
+Manage your branches. You can view, edit, create, delete branches using this command.
+
+```
+# list existing branches & remotes
+$ git branch -a
+
+# create a new branch
+$ git branch myNewBranch
+
+# delete a branch
+$ git branch -d myBranch
+
+# rename a branch
+# git branch -m <oldname> <newname>
+$ git branch -m myBranchName myNewBranchName
+
+# edit a branch's description
+$ git branch myBranchName --edit-description
+
+```
 
