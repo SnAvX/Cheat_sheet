@@ -8,7 +8,7 @@ A git repository is comprised of the .git directory & working tree.
 
 ## .git Directory (component of repository)
 
-The .git directory contains all the configurations, logs, branches, HEAD, and more. [Detail list] https://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html
+The .git directory contains all the configurations, logs, branches, HEAD, and more. [Detail list] (https://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html)
 
 ## Working Tree (component of repository)
 
