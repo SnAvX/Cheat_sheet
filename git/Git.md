@@ -6,4 +6,38 @@ A set of files, directories, historical records, commits, and heads. Imagine it 
 
 A git repository is comprised of the .git directory & working tree.
 
+## .git Directory (component of repository)
 
+The .git directory contains all the configurations, logs, branches, HEAD, and more. [Detail list] https://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html
+
+## Working Tree (component of repository)
+
+This is basically the directories and files in your repository. It is often referred to as your working directory.
+
+## Index (component of .git dir)
+
+The Index is the staging area in git. It's basically a layer that separates your working tree from the Git repository. This gives developers more power over what gets sent to the Git repository.
+
+## Commit
+
+A git commit is a snapshot of a set of changes, or manipulations to your Working Tree. For example, if you added 5 files, and removed 2 others, these changes will be contained in a commit (or snapshot). This commit can then be pushed to other repositories, or not!
+
+## Branch
+
+A branch is essentially a pointer to the last commit you made. As you go on committing, this pointer will automatically update to point the latest commit.
+
+##Tag
+
+A tag is a mark on specific point in history. Typically people use this functionality to mark release points (v1.0, and so on)
+
+## HEAD and head (component of .git dir)
+
+HEAD is a pointer that points to the current branch. A repository only has 1 active HEAD. head is a pointer that points to any commit. A repository can have any number of heads.
+
+## Stages of Git
+
+ * Modified - Changes have been made to a file but file has not been committed to Git Database yet
+ * Staged - Marks a modified file to go into your next commit snapshot
+ * Committed - Files have been committed to the Git Database
+
+# Commande
